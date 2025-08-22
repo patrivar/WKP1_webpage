@@ -1,0 +1,95 @@
+body {
+    background-image: 
+    url("img/AI-CineseCuisineFront.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1200px;
+    height: 800px;
+    overflow-y: hidden;
+    margin: 1rem 0;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    height: 120px;
+    width: 100%;
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+header img {
+    float: left;
+}
+
+header p {
+    color:aliceblue;
+    display: inline-block;
+    float: left;
+    margin-top: 45px;
+    font-size: 30px;
+    text-decoration: line-through;
+    text-decoration-color: gold;
+}
+
+ul {
+    list-style: none;
+    float: right;
+    margin: 35px 20px 0 0;
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+    color: aliceblue;
+    padding: 1rem;
+    background-color: black;
+    border-style: outset;
+}
+
+li:hover {
+    color: gold;
+    border-style: outset;
+    border-color: gold;
+}
+
+li:active {
+    color: black;
+    background-color: gold;
+}
+
+.container {
+    display: inline-block;
+    background-color: burlywood;
+    width: 30%;
+    float: left;
+    min-width: 250px;
+    margin: 1.5rem 0 0 1.5rem;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+.container h1 {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+#Name {
+    text-decoration: line-through;
+    text-decoration-color: black;
+}
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow-x: auto;
+}
+
+.SmallLogo {
+    position: absolute;
+    top: 137px;
+    left: 372px;
+}
