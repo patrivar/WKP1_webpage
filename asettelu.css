@@ -1,3 +1,11 @@
+:root {
+    --main-bg: black;
+    --main-fg: aliceblue;
+    --accent: gold;
+    --button-bg: #fff;
+    --container: burlywood;
+}
+
 body {
     background-image: 
     url("img/AI-CineseCuisineFront.jpg");
@@ -10,7 +18,7 @@ body {
 }
 
 header {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--main-bg);
     height: 120px;
     width: 100%;
     margin: 0 1rem;
@@ -22,13 +30,13 @@ header img {
 }
 
 header p {
-    color:aliceblue;
+    color: var(--main-fg);
     display: inline-block;
     float: left;
     margin-top: 45px;
     font-size: 30px;
     text-decoration: line-through;
-    text-decoration-color: gold;
+    text-decoration-color: var(--accent);
 }
 
 ul {
@@ -40,26 +48,27 @@ ul {
 
 li {
     display: inline-block;
-    color: aliceblue;
+    color: var(--main-fg);
     padding: 1rem;
-    background-color: black;
+    background-color: var(--main-bg);
     border-style: outset;
+    transition: 0.2s;
 }
 
 li:hover {
-    color: gold;
+    color: var(--accent);
     border-style: outset;
-    border-color: gold;
+    border-color: var(--accent);
 }
 
 li:active {
-    color: black;
-    background-color: gold;
+    color: var(--main-fg);
+    background-color: var(--accent);
 }
 
 .container {
     display: inline-block;
-    background-color: burlywood;
+    background-color: var(--container);
     width: 30%;
     float: left;
     min-width: 250px;
@@ -75,12 +84,12 @@ li:active {
 
 #Name {
     text-decoration: line-through;
-    text-decoration-color: black;
+    text-decoration-color: var(--main-bg);
 }
 
 footer {
-    background-color: black;
-    color: aliceblue;
+    background-color: var(--main-bg);
+    color: var(--main-fg);
     text-align: center;
     width: 100%;
     position: absolute;
@@ -92,4 +101,82 @@ footer {
     position: absolute;
     top: 137px;
     left: 372px;
+}
+
+#logIn1 {
+    color: var(--main-fg);
+    padding: 1rem;
+    background-color: var(--main-bg);
+    border-style: outset;
+    border-width: 2px;
+    border-color: transparent;
+    font-size: 1rem;
+    margin: 35px 0 0 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+#logIn1:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+#logIn1:active {
+    color: var(--main-bg);
+    background-color: var(--accent);
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.form {
+    border-radius: 5px;
+    border-width: 0.1px;
+}
+
+#user {
+    width: 400px;
+    border-radius: 8px;
+    background-image: url('img/bonsaiback.jpg');
+    background-size: 650px;
+    background-repeat: no-repeat;
+}
+
+#formbuttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 9rem;
+    margin-top: 0.5rem;
+}
+
+.formbut {
+    flex: 1;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.input-error-space {
+    min-height: 1.2em;
+    font-size: 0.9em;
+    color: transparent;
+    transition: color 0.3s;
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+.input-error-space.input-error {
+    color: red;
+}
+
+.form:valid {
+    border-color: green;
+}
+
+.form:invalid {
+    border-color: red;
 }

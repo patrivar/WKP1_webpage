@@ -6,6 +6,7 @@
     <meta name="author" content="Patric Varis">
     <meta name="description" content="WKP1">
     <link rel="stylesheet" href="asettelu.css" type="text/css">
+    <script src="sivu.js" defer></script>
     <title>Bonsai</title>
 </head>
 
@@ -13,12 +14,35 @@
     <header>
         <img src="img/BondaiLogo.png" alt="logo" width="130" height="130">
         <p>Bonsai</p>
+
+        <button id="logIn1">Log in</button>
         
         <ul>
             <li>Menu</li>
             <li>About us</li>
             <li>Contact</li>
         </ul>
+
+        <dialog id="user">
+            <form method="POST">
+                <label>Name:</label>
+                <input class="form" type="text" id="userName" name="userName" minlength="3" placeholder="Name" required title="Syötteen täytyy sisältää vähintään 3 kirjainta">
+                <div class="input-error-space"></div>
+
+                <label>Email:</label>
+                <input class="form" type="email" id="email" name="email" placeholder="Email" required pattern=".+@metropolia.fi" title="Käytä @metropolia.fi">
+                <div class="input-error-space"></div>
+
+                <label>Password:</label>
+                <input class="form" type="password" id="password" name="password" minlength="5" placeholder="Password" required pattern=".*[0-9].*" title="Vähintän 5 merkkiä pitkä ja sisältää vähintään 1 numeron">
+                <div class="input-error-space"></div>
+
+            </form>
+            <div id="formbuttons">
+                <button class="formbut" id="logIn">Log in</button>
+                <button class="formbut" id="cancel">Cancel</button>
+            </div>
+        </dialog>
     </header>
 
     <div class="SmallLogo">
